@@ -1,0 +1,31 @@
+﻿
+@model Employee
+
+@{
+    ViewData["Title"] = "Emploees Home Page";
+}
+
+<h1>Employee Management System</h1>
+
+<hr />
+
+
+
+<br/>
+<p>
+    <a asp-controller="Employees" asp-action="Create">Create New Employee</a>
+</p>
+
+
+<div>
+    <a asp-controller="Employees" asp-action="Index">Show the List of Employees</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }
+
+
+   
