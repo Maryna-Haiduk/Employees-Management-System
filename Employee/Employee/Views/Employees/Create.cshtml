@@ -5,6 +5,7 @@
 }
 
 <h1>Create new Employee</h1>
+<br/>
 
 <h4>Fill next fields: </h4>
 <hr />
@@ -54,10 +55,11 @@
         </form>
     </div>
 </div>
-<br/>
-<div>
-    <a asp-action="Index">Show the Full List of Employees</a>
-</div>
+
+<form asp-action="List" style="margin-top:10px;margin-bottom:10px">
+    <input type="submit" value="Back to List" class="btn btn-success" />
+</form>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

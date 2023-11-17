@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JriiIKU5uMNhmYs4LHkkxO+Xkw0/kN1jFcFEykdlh8BOVDi1CFuH3/rMXPG7ZnBBiUUUXN8UQzNw0/mje2kHkA==",
+  "dgSpecHash": "sR7FXNcuanH5m07mYQgUf4J3a2ScH1GY8u/vzEcUGZffTmH4o9EQu81M25YrCjy1GwFrLQMnfPDaLUaCGVnYTA==",
   "success": true,
-  "projectFilePath": "D:\\1-Programming\\HappyArray\\happyarrayprojects\\Employee\\Employee\\Employee.csproj",
+  "projectFilePath": "D:\\1-Programming\\Projects\\Employee-s-Management-System\\Employee\\Employee\\Employee.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Марiна\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Марiна\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

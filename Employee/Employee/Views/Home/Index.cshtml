@@ -9,17 +9,27 @@
 
 <hr />
 
-
+<div class="row">
+    <div class="col-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Create a New Employee</h5>
+                <a asp-controller="Employees" asp-action="Create" class="btn btn-primary">Start</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Full List of Employees</h5>
+                <a asp-controller="Employees" asp-action="List" class="btn btn-success">Show</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <br/>
-<p>
-    <a asp-controller="Employees" asp-action="Create">Create New Employee</a>
-</p>
 
-
-<div>
-    <a asp-controller="Employees" asp-action="Index">Show the List of Employees</a>
-</div>
 
 @section Scripts {
     @{

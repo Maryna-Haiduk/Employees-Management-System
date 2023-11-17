@@ -18,8 +18,13 @@ namespace Employee.Controllers
             _context = context;
         }
 
+        public IActionResult Index()
+        {
+            return View();
+        }
+
         // GET: Employees
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> List()
         {
               return _context.Employees != null ? 
                           View(await _context.Employees.ToListAsync()) :
@@ -61,7 +66,7 @@ namespace Employee.Controllers
             {
                 _context.Add(employee);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(List));
             }
             return View(employee);
         }
@@ -112,7 +117,7 @@ namespace Employee.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(List));
             }
             return View(employee);
         }
@@ -151,7 +156,7 @@ namespace Employee.Controllers
             }
             
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(List));
         }
 
         private bool EmployeeExists(int id)
