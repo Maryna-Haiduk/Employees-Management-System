@@ -14,5 +14,14 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+/*    background-image: url("https://img.freepik.com/free-vector/gradient-abstract-wireframe-background_23-2149018012.jpg?w=1060&t=st=1700452670~exp=1700453270~hmac=c5abc3225600b5df24e2f80aa33a2e369fa0912f5bc83812a9e0b261e7bd11dc");
+*/    background-image: url("/image/bg1.jpg");
+    background-size: cover;
+    background-color: #cccccc;
+}
+
+.custom {
+    width: 150px !important;
+    text-align: center;
 }

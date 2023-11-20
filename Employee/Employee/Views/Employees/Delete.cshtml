@@ -4,6 +4,8 @@
     ViewData["Title"] = "Delete";
 }
 
+<br />
+
 <h1>Delete</h1>
 
 <h3>Are you sure you want to delete this?</h3>
@@ -12,19 +14,19 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FirstName)
+            First Name
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.FirstName)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.LastName)
+            Last Name
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.LastName)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DepartmentName)
+            Department Name
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.DepartmentName)
@@ -48,7 +50,7 @@
             @Html.DisplayFor(model => model.HRA)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NetSalary)
+            Net Salary
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.NetSalary)
@@ -60,13 +62,11 @@
 
             <form asp-action="Delete">
                 <input type="hidden" asp-for="Id" />
-                <input type="submit" value="Delete" class="btn btn-danger" />
-            </form>
-
-            <form asp-action="List" style="margin-top:10px;margin-bottom:10px">
-                <input type="submit" value="Back to List" class="btn btn-success" />
+                <input type="submit" value="Delete" class="btn btn-danger custom" style="margin-bottom:10px;"  />
+                <a asp-action="List" class="btn btn-success custom">Back to List</a>
             </form>
 
         </div>
     </div>
+
 </div>

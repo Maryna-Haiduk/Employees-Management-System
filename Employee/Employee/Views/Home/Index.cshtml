@@ -5,24 +5,26 @@
     ViewData["Title"] = "Emploees Home Page";
 }
 
+<br />
 <h1>Employee Management System</h1>
 
 <hr />
+<br />
 
 <div class="row">
     <div class="col-4">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Create a New Employee</h5>
-                <a asp-controller="Employees" asp-action="Create" class="btn btn-primary">Start</a>
+                <h5 class="card-title" style="margin-top:10px;margin-bottom:20px;">Add a New Employee</h5>
+                <a asp-controller="Employees" asp-action="Create" class="btn btn-primary custom">Create New</a>
             </div>
         </div>
     </div>
     <div class="col-4">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Full List of Employees</h5>
-                <a asp-controller="Employees" asp-action="List" class="btn btn-success">Show</a>
+                <h5 class="card-title" style="margin-top:10px;margin-bottom:20px;">Full List of Employees</h5>
+                <a asp-controller="Employees" asp-action="List" class="btn btn-success custom">Show List</a>
             </div>
         </div>
     </div>

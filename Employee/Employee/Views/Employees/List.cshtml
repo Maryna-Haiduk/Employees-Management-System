@@ -4,6 +4,8 @@
     ViewData["Title"] = "List";
 }
 
+<br />
+
 <h1>List of Employees</h1>
 
 
@@ -12,13 +14,13 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.FirstName)
+                First Name
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.LastName)
+                Last Name
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DepartmentName)
+                Department Name
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Basic)
@@ -30,7 +32,7 @@
                 @Html.DisplayNameFor(model => model.HRA)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NetSalary)
+                Net Salary
             </th>
             <th></th>
         </tr>
@@ -60,17 +62,16 @@
                 @Html.DisplayFor(modelItem => item.NetSalary)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary btn-sm">Edit</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-success btn-sm">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Delete</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
 
-<br/> 
+<br/>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<a asp-controller="Employees" asp-action="Create" class="btn btn-primary custom">Create New</a>
+
